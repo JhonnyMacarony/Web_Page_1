@@ -2,8 +2,115 @@
     <nav>
       <a href="/">Mybrary</a>
       <ul>
-        <li><a href="/authors">Authors</a></li>
-        <li><a href="/authors/new">Add Author</a></li>
-      </ul>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                .options{
+                    background-color: #333;
+                    display: flex;
+                    height: 100vh;
+                    width: 210px;
+                    flex-direction: column;
+                }
+                .web-design{
+                    display: flex;
+                    background-color: #333;
+                    background-color: transparent;
+                    color: rgba(255, 255, 255, 0.925);
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border: none;
+                    font-size: 18px;
+                    cursor: pointer;
+                    height: 40px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    width: 100%;
+                }
+                #btn:hover{
+                    background-color: rgb(109, 109, 109);
+                }
+                .web-design1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    padding-bottom: 15px;
+                    text-decoration: none;
+                }
+                .content{
+                    background-color: rgb(129, 129, 129);
+                    color: #333;
+                    padding-left: 5px;
+                    padding-top: 5px;
+                }
+                .mother{
+                    display: flex;
+                }
+                .content-text{
+                    padding-bottom: 15px;
+                    font-size: 23px;
+                }
+                .content-header{
+                    padding-bottom: 20px;
+                    font-size: 35px;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    margin-bottom: 15px;
+                }
+                .content-text-end{
+                    padding-top: 20px;
+                    font-size: 23px;
+                }
+                .code-input{
+                    display: flex;
+                    padding-top: 5px;
+                    margin-left: 60px;
+                    padding-left: 15px;
+                    font-size: 20px;
+                    border: 2px solid rgb(77, 76, 76);
+                    width: 80vw;
+                    height: 200px;
+                    background-color: rgb(204, 199, 199);
+                }
+            </style>
+        </head>
+        <body>
+            <div class="mother">
+                <div class="options">
+                    <%- include('../partials/header.ejs') %> 
+                    <a href="/views/layouts/layout.ejs" class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a href="project1.ejs" class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                    <a class="web-design" href><button id="btn" class="web-design"><div class="web-design1" id="">Web design</div></button></a>
+                </div>
+                <div class="content">
+                    <h1 class="content-header">WebPage Design</h1>
+                    <div class="content-text"><p>This code will create you a great website design</p></div>
+                    <div class="code-input">
+                        &lt div id="idk" &gt &lt /div &gt
+                    </div>
+                    <div class="content-text-end"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam repellat distinctio vero necessitatibus aliquid mollitia praesentium. Ratione voluptates repellendus blanditiis hic aliquam reiciendis porro? Enim ratione totam natus velit quae.</p></div>
+                </div>
+            
+            </div>
+        </body>
+        </html>      </ul>
     </nav>
   </header>
